@@ -27,7 +27,7 @@ const ContactForm = ({ loaded }) => {
 
     try {
       const response = await fetch(
-        "http://api.mgconsulting.one/api/register/v1",
+        "https://api.mgconsulting.one/api/register/v1",
         {
           method: "POST",
           body: formData,

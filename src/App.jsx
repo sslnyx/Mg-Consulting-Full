@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import pageContent from "/src/assets/data/pageContent";
+import pageContent from "/src/assets/data/pageContent.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "/src/assets/scss/App.scss";
 
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/Mg-Consulting-Full/">
         <main className="App">
           <Helmet
             defaultTitle={import.meta.env.VITE_APP_TITLE}

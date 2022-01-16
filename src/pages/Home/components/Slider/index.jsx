@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
-import pageContent from "/src/assets/data/pageContent";
+// import pageContent from "/src/assets/data/pageContent";
+import { slideImgs } from "../../../../assets/images/pages/home";
 
 import "keen-slider/keen-slider.min.css";
 import "./index.scss";
@@ -46,7 +47,7 @@ const HeroSlider = () => {
         {slides.map((slide, i) => (
           <div className="keen-slider__slide" key={i}>
             <img
-              src={`/src/assets/images/pages/home/home-slide-${i + 1}.jpg`}
+              src={slideImgs[i]}
               alt=""
             />
             <div className="content d-flex align-items-center">
