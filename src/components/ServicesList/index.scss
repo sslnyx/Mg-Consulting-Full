@@ -1,0 +1,50 @@
+@import "/src/assets/scss/variables";
+
+.services-list {
+    h3 {
+        text-align: center;
+    }
+
+    .services-list-wrapper {
+        position: relative;
+        overflow: hidden;
+        .s-bg {
+            position: absolute;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .content {
+            padding: 50px 0;
+        }
+
+        .row {
+            color: #fff;
+            ul {
+                margin-bottom: 0;
+            }
+            li {
+                margin-bottom: 1rem;
+            }
+
+            .col-12 {
+                display: flex;
+                justify-content: inherit;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .services-list-wrapper {
+            .content {
+                padding: 100px 0;
+            }
+
+            .row {
+                .col-12 {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

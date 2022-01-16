@@ -1,0 +1,24 @@
+form {
+    padding: 20px 0;
+
+    .row {
+        margin-bottom: 20px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .btn-wrapper {
+        height: 41px;
+        align-items: center;
+    }
+
+    // ::placeholder {
+    //     /* Chrome, Firefox, Opera, Safari 10.1+ */
+    //     padding: 0 20px;
+    //     color: red;
+    //     opacity: 1; /* Firefox */
+    // }
+}

@@ -1,0 +1,180 @@
+body {
+    font-family: "Agenda", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    color: $blue;
+    font-size: 14px;
+    .App {
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+h1,
+h2 {
+    font-family: "Avalon", sans-serif;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2.line-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        background: $blue;
+        height: 5px;
+        margin-bottom: 12px;
+        margin-left: 15px;
+    }
+}
+
+section {
+    padding: 50px 0;
+}
+
+@mixin content {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 22px;
+}
+
+.content {
+    @include content;
+    &-w {
+        @include content;
+        max-width: 1440px;
+    }
+}
+
+@mixin gb-color {
+    color: #fff;
+    a {
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.bg-blue {
+    @include gb-color;
+    background: $blue;
+}
+
+.bg-green {
+    @include gb-color;
+    background: $green;
+}
+
+.bg-overlay {
+    right: 0;
+    position: absolute;
+    background: $blueT;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-main {
+    border: 0;
+    background: $green;
+    border: 2px solid $green;
+    color: #fff;
+    padding: 0.4rem 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    &:hover {
+        color: $green;
+        background: #fff;
+        transition: all 0.3s ease;
+    }
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin btn-sub {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    position: relative;
+
+    &:hover {
+        color: #fff;
+    }
+    &::after {
+        content: "";
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        position: absolute;
+        right: 0;
+    }
+    &::before {
+        content: "";
+        height: 2px;
+        right: 0;
+        background: #fff;
+        width: 30px;
+        position: absolute;
+    }
+}
+
+.btn-sub {
+    @include btn-sub;
+    &-blue {
+        @include btn-sub;
+        color: $blue;
+
+        &::before {
+            background: $blue;
+        }
+
+        &::after {
+            border: solid $blue;
+            border-width: 0 2px 2px 0;
+        }
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-green {
+    background: $green;
+}
+
+@media (min-width: 991px) {
+    body {
+        font-size: 1rem;
+    }
+    .bg-overlay {
+        right: calc(50% + 1024px / 2 - 375px);
+    }
+}

@@ -1,0 +1,29 @@
+@import "/src/assets/scss/variables";
+
+footer {
+    background: $blue;
+    position: relative;
+
+    .footer-logo-wrapper {
+        position: relative;
+        height: 100%;
+        padding: 50px;
+        z-index: 1;
+        background: $green;
+    }
+
+    .contact-wrapper {
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    @media (min-width: 768px) {
+        .footer-logo-wrapper {
+            position: absolute;
+        }
+        .contact-wrapper {
+            text-align: left;
+            padding: 100px;
+        }
+    }
+}

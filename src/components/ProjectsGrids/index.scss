@@ -1,0 +1,42 @@
+@import "/src/assets/scss/variables";
+
+.projects-grids {
+    .col-12 {
+        padding: 50px 22px;
+        p {
+            color: #fff;
+            &:last-child {
+                margin: 0;
+            }
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .col-12:nth-child(2n-1) {
+        background: $blue;
+    }
+
+    .col-12:nth-child(2n) {
+        background: $green;
+    }
+
+    @media (min-width: 768px) {
+        .col-12 {
+            p {
+                br {
+                    display: block;
+                }
+            }
+        }
+        .col-12:nth-child(4n - 2),
+        .col-12:nth-child(4n - 1) {
+            background: $blue;
+        }
+        .col-12:nth-child(4n - 3),
+        .col-12:nth-child(4n - 4) {
+            background: $green;
+        }
+    }
+}

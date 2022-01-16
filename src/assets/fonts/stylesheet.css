@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Avalon';
+    src: url('Avalon-Bold.eot');
+    src: url('Avalon-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Avalon-Bold.woff2') format('woff2'),
+        url('Avalon-Bold.woff') format('woff'),
+        url('Avalon-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('Agenda-MediumCondensed.eot');
+    src: url('Agenda-MediumCondensed.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-MediumCondensed.woff2') format('woff2'),
+        url('Agenda-MediumCondensed.woff') format('woff'),
+        url('Agenda-MediumCondensed.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
