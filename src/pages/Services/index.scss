@@ -14,6 +14,14 @@
             li {
                 color: $blue;
                 font-size: 1.2rem;
+                .li-dot {
+                    background: $blue;
+                    height: 8px;
+                    width: 8px;
+                    min-width: 8px;
+                    border-radius: 50%;
+                    // margin-top: 10px;
+                }
             }
 
             .col-12 {
@@ -35,6 +43,9 @@
             .row {
                 li {
                     font-size: 1.5rem;
+                    .li-dot {
+                        margin-top: 4px;
+                    }
                 }
 
                 .col-12 {

@@ -1,6 +1,6 @@
 body {
+    // font-weight: 500;
     font-family: "Agenda", sans-serif;
-    font-weight: 500;
     margin: 0;
     color: $blue;
     font-size: 14px;
@@ -8,6 +8,10 @@ body {
         overflow: hidden;
         width: 100%;
     }
+}
+
+h1 {
+    margin-top: 0;
 }
 
 h1,
@@ -21,6 +25,7 @@ h3 {
 
 a {
     color: #fff;
+    font-family: "Agenda", sans-serif;
     text-decoration: none;
 }
 
@@ -107,12 +112,14 @@ section {
 .btn-wrapper {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 10;
 }
 
 @mixin btn-sub {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 14px;
     display: flex;
     align-items: center;
     padding-right: 40px;
@@ -126,7 +133,7 @@ section {
         border: solid #fff;
         border-width: 0 2px 2px 0;
         display: inline-block;
-        padding: 5px;
+        padding: 3px;
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
         position: absolute;
@@ -176,5 +183,13 @@ img {
     }
     .bg-overlay {
         right: calc(50% + 1024px / 2 - 375px);
+    }
+
+    .btn-sub,
+    .btn-sub-blue {
+        font-size: 1.5rem;
+        &::after {
+            padding: 5px;
+        }
     }
 }

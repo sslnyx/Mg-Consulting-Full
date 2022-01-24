@@ -26,16 +26,18 @@ const ServicesList = ({ bgImg, url }) => {
               <Col xs={12} md={6} key={i}>
                 <ul>
                   {col.map((el, j) => (
-                    <li key={j}>{el}</li>
+                    <li key={i + j}>
+                      <span>{el}</span>
+                    </li>
                   ))}
                 </ul>
               </Col>
             ))}
           </Row>
           {url ? (
-            <div className="btn-wrapper">
-              <Link to="/services" className="btn-sub">
-                Learn More
+            <div className="btn-wrapper mt-5">
+              <Link to="/core-services" className="btn-sub">
+                <span>Learn More</span>
               </Link>
             </div>
           ) : null}

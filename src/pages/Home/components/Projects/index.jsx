@@ -4,8 +4,6 @@ import ProjectsGrids from "../../../../components/ProjectsGrids";
 
 import "./index.scss";
 
-
-
 const Projects = () => {
   // console.log(projects);
   return (
@@ -17,10 +15,12 @@ const Projects = () => {
           PROJECTS
         </h2>
 
-        <ProjectsGrids />
+        <Link to="/our-projects">
+          <ProjectsGrids />
+        </Link>
 
         <div className="btn-wrapper">
-          <Link to="/projects" className="btn-sub-blue">
+          <Link to="/our-projects" className="btn-sub-blue">
             Learn More
           </Link>
         </div>

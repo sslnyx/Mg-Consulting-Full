@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Avalon';
-    src: url('Avalon-Bold.eot');
-    src: url('Avalon-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Avalon-Bold.woff2') format('woff2'),
-        url('Avalon-Bold.woff') format('woff'),
-        url('Avalon-Bold.ttf') format('truetype');
+    font-family: 'Agenda';
+    src: url('Agenda-Bold.eot');
+    src: url('Agenda-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-Bold.woff2') format('woff2'),
+        url('Agenda-Bold.woff') format('woff'),
+        url('Agenda-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -12,11 +12,11 @@
 
 @font-face {
     font-family: 'Agenda';
-    src: url('Agenda-MediumCondensed.eot');
-    src: url('Agenda-MediumCondensed.eot?#iefix') format('embedded-opentype'),
-        url('Agenda-MediumCondensed.woff2') format('woff2'),
-        url('Agenda-MediumCondensed.woff') format('woff'),
-        url('Agenda-MediumCondensed.ttf') format('truetype');
+    src: url('Agenda-Medium.eot');
+    src: url('Agenda-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-Medium.woff2') format('woff2'),
+        url('Agenda-Medium.woff') format('woff'),
+        url('Agenda-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

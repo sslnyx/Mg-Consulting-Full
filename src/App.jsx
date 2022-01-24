@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import pageContent from "/src/assets/data/pageContent.js";
+
+import "normalize.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "/src/assets/scss/App.scss";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -16,6 +17,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import "/src/assets/scss/App.scss";
 
 function App() {
   const getContent = (pageName) => {
@@ -30,7 +33,7 @@ function App() {
 
   return (
     <HelmetProvider>
-      <Router basename="/Mg-Consulting-Full/">
+      <Router basename="/">
         <main className="App">
           <Helmet
             defaultTitle={import.meta.env.VITE_APP_TITLE}
@@ -48,11 +51,11 @@ function App() {
               element={<Contact {...getContent("Contact Us")} />}
             />
             <Route
-              path="/services"
+              path="/core-services"
               element={<Services {...getContent("Core Services")} />}
             />
             <Route
-              path="/projects"
+              path="/our-projects"
               element={<Projects {...getContent("Our Projects")} />}
             />
             <Route path="/*" element={<FourOFour />} />

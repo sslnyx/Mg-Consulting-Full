@@ -10,11 +10,20 @@ footer {
         padding: 50px;
         z-index: 1;
         background: $green;
+        display: felx;
+        justify-content: center;
+        .footer-logo{
+            width: 150px;
+        }
     }
 
     .contact-wrapper {
         text-align: center;
-        padding: 100px 0;
+        padding: 0;
+    }
+
+    .content-w{
+        padding: 50px;
     }
 
     @media (min-width: 768px) {
@@ -23,7 +32,7 @@ footer {
         }
         .contact-wrapper {
             text-align: left;
-            padding: 100px;
+            padding: 0px;
         }
     }
 }

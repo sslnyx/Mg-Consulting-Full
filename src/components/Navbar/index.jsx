@@ -9,8 +9,8 @@ const Navbar = () => {
   const pages = [
     { name: "Home", slug: "/" },
     { name: "About Us", slug: "/about-us" },
-    { name: "Core Services", slug: "/services" },
-    { name: "Projects", slug: "/projects" },
+    { name: "Core Services", slug: "/core-services" },
+    { name: "Our Projects", slug: "/our-projects" },
     { name: "Contact Us", slug: "/contact-us" },
   ];
 
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <span className="text-uppercase">{page.name}</span>
               </Link>
             ))}
-            <Link
+            {/* <Link
               className="btn-main"
               to={{
                 pathname: "/contact-us",
@@ -71,7 +71,7 @@ const Navbar = () => {
               }}
             >
               Register
-            </Link>
+            </Link> */}
           </div>
           <div className="hamburger-wrapper d-block d-lg-none">
             <HamburgerIcon {...{ MobileMenuHandler }}></HamburgerIcon>

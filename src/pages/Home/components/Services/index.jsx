@@ -36,7 +36,7 @@ const Services = () => {
               <h3 className="mb-4">
                 Navigating through
                 <br /> complex land
-                <br /> developement processes
+                <br /> development processes
               </h3>
               <p>
                 At MG Consulting, we thrive in navigating through these complex

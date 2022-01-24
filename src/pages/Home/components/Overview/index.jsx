@@ -1,14 +1,11 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
+// import ArrowBtn from "../../../../components/ArrowBtn";
 import overviewImg from "/src/assets/images/pages/home/overview.jpg";
-
-
 import "./index.scss";
 
 const Overview = () => {
-
-
   return (
     <section id="overview" className="overview">
       <div className="content">
@@ -48,6 +45,10 @@ const Overview = () => {
                   Learn More
                 </Link>
               </div>
+
+              {/* <ArrowBtn>
+                <Link to="/about-us">Learn More</Link>
+              </ArrowBtn> */}
             </div>
           </Col>
           <Col xs={12} md={6} className="order-1 order-md-2">

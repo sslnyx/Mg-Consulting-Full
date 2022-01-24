@@ -1,6 +1,6 @@
 .banner-w-text {
     position: relative;
-    height: 550px;
+    height: 300px;
     img {
         position: absolute;
         height: 100%;
@@ -16,8 +16,18 @@
         padding: 0 22px;
         h4 {
             z-index: 1;
-            font-size: 3rem;
-            margin-bottom: 30px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        height: 550px;
+
+        .text-block {
+            h4 {
+                font-size: 3rem;
+            }
         }
     }
 }

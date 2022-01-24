@@ -16,9 +16,9 @@ const MobileMenu = ({ pages, activeMenu, MobileMenuHandler }) => {
             <Link to={slug}>{name}</Link>
           </li>
         ))}
-        <li>
+        {/* <li>
           <Link to="/contact-us#register" onClick={MobileMenuHandler}>Register</Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

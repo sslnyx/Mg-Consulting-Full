@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { useLocation, Link } from "react-router-dom";
 
-import projects from "/src/assets/data/projects.json";
+import projects from "/src/assets/data/projects";
 import "./index.scss";
 
 const ProjectsGrids = () => {
@@ -26,11 +26,11 @@ const ProjectsGrids = () => {
             <p>{project.subtitle}</p>
           </div>
 
-          {pathname === "/projects" ? (
+          {pathname === "/our-projects" ? (
             <div className="btn-wrapper">
-              <Link to="#" className="btn-sub mt-4">
+              <a target="_blank" href={project.pdf} className="btn-sub mt-4">
                 Learn More
-              </Link>
+              </a>
             </div>
           ) : (
             ""

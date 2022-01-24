@@ -9,15 +9,15 @@ const ContactForm = ({ loaded }) => {
   const [show, setShow] = useState(false);
   const mgContact = useRef(null);
 
-  const { hash } = useLocation();
   const handleClose = () => setShow(false);
+  // const { hash } = useLocation();
 
-  useEffect(() => {
-    // console.log(loaded);
-    if (hash === "#register" && loaded) {
-      mgContact.current.scrollIntoView();
-    }
-  }, [hash, loaded]);
+  // useEffect(() => {
+  //   // console.log(loaded);
+  //   if (hash === "#register" && loaded) {
+  //     mgContact.current.scrollIntoView();
+  //   }
+  // }, [hash, loaded]);
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
@@ -38,7 +38,6 @@ const ContactForm = ({ loaded }) => {
       setSubmitting(false);
 
       setShow(true);
-
       console.log("susses: ", resContent);
     } catch (err) {
       console.log("error: ", err);
@@ -50,50 +49,42 @@ const ContactForm = ({ loaded }) => {
     <form ref={mgContact} onSubmit={handleSubmit}>
       <Row>
         <Col>
-          <input
-            type="text"
-            name="firstName"
-            required
-            placeholder="FIRST NAME*"
-          />
+          <div className="input-wrapper">
+            <input type="text" name="firstName" required placeholder="FIRST NAME*" />
+          </div>
         </Col>
         <Col>
-          <input
-            type="text"
-            name="lastName"
-            required
-            placeholder="LAST NAME*"
-          />
+          <div className="input-wrapper">
+            <input type="text" name="lastName" required placeholder="LAST NAME*"/>
+          </div>
         </Col>
       </Row>
 
       <Row>
         <Col>
-          <input
-            type="email"
-            name="email"
-            required
-            placeholder="EMAIL ADDRESS*"
-          />
+          <div className="input-wrapper">
+            <input type="email" name="email" required placeholder="EMAIL*" />
+
+          </div>
         </Col>
       </Row>
 
       <Row>
         <Col>
-          <input type="phone" name="phone" placeholder="TELEPHONE*" />
+          <div className="input-wrapper">
+            <input type="phone" name="phone" required placeholder="TELEPHONE*" />
+          </div>
         </Col>
       </Row>
 
-      <Row>
-        <Col>
-          <textarea
-            name="message"
-            placeholder="COMMENT/QUESTION"
-            cols="30"
-            rows="5"
-          ></textarea>
-        </Col>
-      </Row>
+      <div className="input-wrapper">
+        <textarea
+          name="message"
+          cols="30"
+          rows="5"
+          placeholder="COMMENT/QUESTION"
+        ></textarea>
+      </div>
 
       <div className="btn-wrapper">
         {!submitting ? (
